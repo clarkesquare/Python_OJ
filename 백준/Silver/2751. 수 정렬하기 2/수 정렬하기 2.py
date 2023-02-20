@@ -6,7 +6,7 @@ score = []
 for i in range(n):
     score.append(int(sys.stdin.readline()))
 
-score = sorted(score)
+score.sort()
         
 for j in score:
     print(j)
