@@ -3,14 +3,14 @@ def solution(board):
     temp = []
     answer = 0
     
-    for i in range(len(board[0])+2):
+    for _ in range(len(board[0])+2):
         temp = []
-        for j in range(len(board[0])+2):
+        for _ in range(len(board[0])+2):
             temp.append(0)
         area.append(temp)
         
     for j in range(len(board)):
-        for k in range(len(board[j])):
+        for k in range(len(board)):
             if board[j][k] == 1:
                 area[j][k:k+3:] = [1, 1, 1]
                 area[j+1][k:k+3:] = [1, 1, 1]
