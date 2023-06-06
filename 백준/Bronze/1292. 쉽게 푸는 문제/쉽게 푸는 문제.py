@@ -1,4 +1,4 @@
-number, n = 0, 0
+n = 0
 temp = []
 
 while len(temp) <= 1000:
