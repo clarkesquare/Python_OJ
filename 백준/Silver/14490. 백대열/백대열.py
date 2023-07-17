@@ -1,8 +1,6 @@
 n, m = map(int, input().split(':'))
-i = 0
 
 a, b = max(n, m), min(n, m)
-
 while b != 0:
     a, b = b, a%b
 
