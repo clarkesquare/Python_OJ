@@ -1,8 +1,7 @@
 stu_a = ['A', 'B', 'C']
 stu_b = ['B', 'A', 'B', 'C']
 stu_c = ['C', 'C', 'A', 'A', 'B', 'B']
-stu_a_score, stu_b_score, stu_c_score, = 0, 0, 0
-score, result = 0, 0
+stu_a_score, stu_b_score, stu_c_score, score = 0, 0, 0, 0
 answer = []
 
 n = int(input())
