@@ -6,4 +6,4 @@ for _ in range(int(input())):
         if a[i] != b[i]:
             cnt += 1
     
-    print('Hamming distance is', str(cnt)+'.')
+    print(f'Hamming distance is {cnt}.')
