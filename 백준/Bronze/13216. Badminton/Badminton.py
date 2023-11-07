@@ -1,6 +1,6 @@
 wins = []
 score = []
-cnt, n = 0, 0
+n = 0
 game = input()
 
 while True:
