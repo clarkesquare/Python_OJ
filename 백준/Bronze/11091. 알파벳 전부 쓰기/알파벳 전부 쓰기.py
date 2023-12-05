@@ -1,6 +1,6 @@
 from string import ascii_lowercase
 
-word = []
+word, alphabets = [], []
 answer = ''
 
 for i in range(int(input())):
