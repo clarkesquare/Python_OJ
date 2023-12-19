@@ -1,11 +1,9 @@
 word = input()
-temp = word[0]
 answer = ''
 
 for i in range(1, len(word)):
-    if temp != word[i]:
-        answer += temp
-        temp = word[i]
+    if word[i] != word[i-1]:
+        answer += word[i-1]
 
-answer += temp
+answer += word[-1]
 print(answer)
