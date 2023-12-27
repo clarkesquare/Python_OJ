@@ -1,6 +1,6 @@
 answer = 0
 temp = 0
-numbers = [0] * int(input())
+n = int(input())
 
 for _ in range(2):
     numbers = map(int, input().split())
