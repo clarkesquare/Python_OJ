@@ -8,7 +8,7 @@ numbers = list(input())
 for i in numbers:
     answer += score[alphabets.index(i)]
 
-if int(str(answer)[-1]) % 2 != 0:
+if answer % 2 != 0:
     print('I\'m a winner!')
 else:
     print('You\'re the winner?')
