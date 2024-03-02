@@ -1,5 +1,4 @@
 number = int(input())
-answer = 0
 
 while True:
     number += 1
