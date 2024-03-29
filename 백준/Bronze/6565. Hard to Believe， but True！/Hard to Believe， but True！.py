@@ -1,6 +1,7 @@
 a = ''
 b = ''
-answer = ''
+c = ''
+numbers = ''
 
 while True:
     numbers = input()
