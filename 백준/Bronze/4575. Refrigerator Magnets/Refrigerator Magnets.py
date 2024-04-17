@@ -1,7 +1,3 @@
-from string import ascii_uppercase
-
-alphabets = list(ascii_uppercase)
-
 word = ""
 
 while True:
