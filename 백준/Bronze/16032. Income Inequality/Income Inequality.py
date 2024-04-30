@@ -8,7 +8,7 @@ while True:
     if n != 0:
         answer = 0
         people = list(map(int, input().split()))
-        avr = sum(people) / len(people)
+        avr = sum(people) / n
         for i in people:
             if i <= avr:
                 answer += 1
