@@ -1,3 +1,7 @@
+import sys
+
+input = sys.stdin.readline
+
 students = []
 
 for _ in range(int(input())):
