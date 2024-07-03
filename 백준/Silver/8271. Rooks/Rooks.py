@@ -6,7 +6,6 @@ for i in range(n):
     tmp = list(input())
     pattern.append(tmp)
     if "W" in tmp:
-        pattern[i][pattern[i].index("W")] = "W"
         answer[pattern[i].index("W")] = 1
 
 for j in range(n):
