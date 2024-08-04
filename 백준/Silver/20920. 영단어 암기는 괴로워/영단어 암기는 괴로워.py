@@ -6,7 +6,7 @@ n, m = map(int, input().split())
 words = {}
 
 for _ in range(n):
-    tmp = input().strip("\n")
+    tmp = input().strip()
     if len(tmp) >= m:
         if tmp not in words:
             words[tmp] = 1
