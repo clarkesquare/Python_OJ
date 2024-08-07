@@ -5,7 +5,7 @@ input = sys.stdin.readline
 n = int(input())
 players = {}
 runner = ""
-answer = []
+answer = ""
 
 for _ in range(n):
     runner = input().strip()
@@ -23,5 +23,5 @@ for _ in range(n-1):
     else:
         players[runner] -= 1
 
-answer = list(players.items())
-print(answer[0][0])
+answer = list(players.items())[0][0]
+print(answer)
