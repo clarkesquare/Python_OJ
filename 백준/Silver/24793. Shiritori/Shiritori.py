@@ -3,6 +3,7 @@ import sys
 input = sys.stdin.readline
 
 pattern = {}
+word = ""
 tmp = ""
 answer = "Fair Game"
 
@@ -13,7 +14,7 @@ for i in range(int(input())):
             tmp = word
             pattern[tmp] = ""
         
-        else: # 2회차부터 검사 진행
+        else: # 2회차 부터 검사 진행
             if word[0] != tmp[-1] or word in pattern:
                 tmp = "game over"
             
@@ -21,7 +22,7 @@ for i in range(int(input())):
                 pattern[word] = ""
                 tmp = word
 
-        if tmp == "game over" and answer == "Fair Game": # 게임 오버
+        if tmp == "game over": # 게임 오버
             answer = "Player 1 lost" if i % 2 == 0 else "Player 2 lost"
     
 print(answer)
