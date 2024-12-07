@@ -16,9 +16,7 @@ int main()
 	{
 		int i, j;
 		cin >> i >> j;
-		tmp = basket[i - 1];
-		basket[i - 1] = basket[j - 1];
-		basket[j - 1] = tmp;
+		swap(basket[i - 1], basket[j - 1]);
 	}
 
 	for (int a = 0; a < n; a++)
