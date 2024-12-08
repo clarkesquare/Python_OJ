@@ -1,6 +1,6 @@
-n, k = map(int, input().split(' '))
-x = list(map(int, input().split(' ')))
+N, k = map(int, input().split())
 
-x.sort(reverse=True)
+numbers = list(map(int, input().split()))
+numbers.sort(reverse = True)
 
-print(x[k-1])
+print(numbers[k - 1])
