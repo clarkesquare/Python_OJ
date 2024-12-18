@@ -1,13 +1,13 @@
-n = int(input())
-
-for i in range(n):
-    combo = 0
-    result = 0
-    answer = input()
-    for j in answer:
-        if j == 'O':
-            combo += 1
-            result += combo
+for _ in range(int(input())):
+    pattern = input()
+    answer = 0
+    cnt = 0
+    for i in range(len(pattern)):
+        if pattern[i] == "O":
+            cnt += 1
+            answer += cnt
+        
         else:
-            combo = 0
-    print(result)
+            cnt = 0
+
+    print(answer)
