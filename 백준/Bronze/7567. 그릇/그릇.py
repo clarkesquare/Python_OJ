@@ -1,13 +1,11 @@
-plates = input()
-total = 0
+pattern = input()
+answer = 10
 
-for i in range(len(plates)):
-    if total == 0:
-        total += 10
+for i in range(1, len(pattern)):
+    if pattern[i] == pattern[i-1]:
+        answer += 5
+    
     else:
-        if plates[i-1] == plates[i]:
-            total += 5
-        else:
-            total += 10
+        answer += 10
 
-print(total)
+print(answer)
