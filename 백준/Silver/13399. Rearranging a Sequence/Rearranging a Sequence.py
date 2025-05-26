@@ -3,7 +3,6 @@ import sys
 n, m = map(int, input().split())
 tmp = 0
 numbers = {}
-answer = []
 input = sys.stdin.readline
 
 for i in range(n, 0, -1):
@@ -14,6 +13,5 @@ for _ in range(m):
     del numbers[tmp]
     numbers[tmp] = ''
 
-answer = list(numbers.items())
-for k, v in answer[::-1]:
+for k,v in reversed(numbers.items()):
     print(k)
