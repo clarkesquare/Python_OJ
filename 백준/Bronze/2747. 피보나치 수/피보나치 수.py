@@ -1,10 +1,6 @@
-n = int(input())
-a = 0
-b = 1
+fibo = [0, 1]
 
-for i in range (n):
-    total = a+b
-    a = b
-    b = total
+for _ in range(int(input()) - 1):
+    fibo.append(fibo[-2] + fibo[-1])
 
-print(a)
+print(fibo[-1])
