@@ -1,3 +1,3 @@
-A, B, C, D = input().split()
+q, w, e, r = input().split() # 앞에서 두개 합치고, 뒤에 두개 합치고 이후에 둘을 숫자로 합산
 
-print(int(A+B)+int(C+D))
+print(int(q + w) + int(e + r))
